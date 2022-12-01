@@ -14,15 +14,6 @@ export function PdfComponentThumbnails() {
 
   return (
     <Box display="flex" flexDirection={"row"}>
-      {/* <Document
-        file="http://localhost:3000/example_more_pages.pdf"
-        onLoadSuccess={onDocumentLoadSuccess}
-        onLoadError={(e) => console.log(e)}
-      >
-        <Box display={"flex"} maxWidth={"200px"}>
-         
-        </Box>
-      </Document> */}
       <Box display="flex">
         <Document
           file="http://localhost:3000/example_more_pages.pdf"
@@ -43,6 +34,7 @@ export function PdfComponentThumbnails() {
                   <Page
                     renderTextLayer={false}
                     renderAnnotationLayer={false}
+                    renderMode={"svg"}
                     height={200}
                     key={`page_${index + 1}`}
                     pageNumber={index + 1}

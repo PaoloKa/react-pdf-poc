@@ -73,13 +73,13 @@ export function PdfComponentZoom() {
         <input
           type="range"
           min="0.5"
-          max="2"
+          max="5"
           value={scale}
           onChange={(event) => setScale(Number(event.target.value))}
           step="0.1"
         />{" "}
-        2{" "}
-        <button type="button" disabled={scale >= 2} onClick={increaseScale}>
+        5{" "}
+        <button type="button" disabled={scale >= 5} onClick={increaseScale}>
           +
         </button>
       </div>

@@ -44,25 +44,10 @@ export function PdfComponentDualPage() {
       <Box display="flex" flexDirection={"row"}>
         <Button
           onClick={() => {
-            setScale(scale - 0.1);
-          }}
-        >
-          -
-        </Button>
-        <Box>{scale}</Box>
-        <Button
-          onClick={() => {
-            setScale(scale + 0.1);
-          }}
-        >
-          +
-        </Button>
-        <Button
-          onClick={() => {
             setDualPage(!dualPage);
           }}
         >
-          Dual page: {dualPage}
+          Dual page: {dualPage ? "on" : "off"}
         </Button>
       </Box>
     </>
