@@ -18,28 +18,28 @@ function App() {
           variant="outlined"
           onClick={() => setSelectedComponent(0)}
         >
-          Test dual page
+          Dual page
         </Button>
         <Button
           sx={{ m: 2 }}
           variant="outlined"
           onClick={() => setSelectedComponent(1)}
         >
-          Test zoom (single page)
+          Zoom render on loading complete(single page)
         </Button>
         <Button
           sx={{ m: 2 }}
           variant="outlined"
           onClick={() => setSelectedComponent(2)}
         >
-          Test zoom css(dual page)
+          CSS zoom(dual page)
         </Button>
         <Button
           sx={{ m: 2 }}
           variant="outlined"
           onClick={() => setSelectedComponent(3)}
         >
-          Test thumbnails
+          Thumbnails
         </Button>
       </Box>
       {selectedComponent === 0 && <PdfComponentDualPage />}
